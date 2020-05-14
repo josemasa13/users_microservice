@@ -15,7 +15,7 @@ before_script:
 
 script:
   - docker --version # print the version for logging
-  - docker build -t user_microservice .
+  - docker build -t users_microservice .
   - docker tag users_microservice josemarcial1311/users_microservice:latest
 
 after_success:
