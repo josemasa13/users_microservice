@@ -53,6 +53,8 @@ router.get('/verification',
     });
 
 router.post('/login', async (req: Request, res: Response) => {
+  console.log("A new login post request has arrived");
+  
   const email = req.body.email;
   const password = req.body.password;
 
